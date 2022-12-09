@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form đăng ký học viên cơ bản</title>
+    <style>
+        H2 {background: #00ffff
+        }
+        td {color: blue}
+    table {
+        background: gold;
+        width: 600px ;
+        height: 400px;
+    }
+    </style>
+</head>
+<body>
+<from action="data" method="fost">
+    <table>
+       <thead>
+        <tr>
+            <td colspan="2"><h2 style="color: #0000ff" >ĐĂNG KÝ HỌC VIÊN</h2> </td>
+        </tr>
+       </thead>
+        <tr>
+            <td><label for="ten">Họ Và Tên</label></td>
+            <td>
+                <input type="text" name="yourname" id="ten"  placeholder="yourname" size="40">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="date">Ngày sinh</label>
+            </td>
+            <td>
+                <input type="date" name="ngày sinh"  id="date" size="20">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                giới tính
+            </td>
+            <td>
+                <input type="radio" name="gende"> nam
+                <input type="radio" name="gende"> nữ
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Địa chỉ
+            </td>
+            <td>
+                <textarea>
+
+                </textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Lớp
+            </td>
+            <td>
+                <select name="class"  va >
+                    <option value="--chọn lớp--">--chọn lớp--</option>
+                    <option value="cấp 2">cấp 2</option>
+                    <option value="cấp 3">cấp 3</option>
+                    <option value="đại học">đại học</option>
+                    <option value="đi làm">đi làm</option>
+                </select>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="email">Email</label>
+            </td>
+            <td>
+                <input type="text" name="email" placeholder="your eamil" id="email" size="30">
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="sdt">Điện Thoại</label>
+            </td>
+            <td>
+                <input type="text" name="number" id="sdt" placeholder="your yournumber" size="30">
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" name="summit" value="Gửi thông tin">
+                <input type="reset" name="reset" value="nhập lại">
+            </td>
+
+        </tr>
+    </table>
+
+</from>
+</body>
+</html>

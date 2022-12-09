@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo form đơn giản</title>
+    <style>
+        h1 {
+            background: #ff4800
+        }
+
+        td {
+            color: #ff5100
+        }
+
+        th {
+            color: #002aff
+        }
+        table { background-color: aliceblue;
+            width: 600px ;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+<style>
+     body {background-color: cyan}
+</style>
+<from action="from" method="fost">
+    <table>
+        <tr>
+                <td colspan="2"><h1 style="color: aliceblue">
+                    <center>SỞ THÍCH CỦA BẠN</center>
+                </h1>
+                </td>
+
+        </tr>
+        <tr>
+            <th>
+                <label for="tên">họ và tên</label>
+            </th>
+            <td>
+                <input type="text" name="yourname" id="tên" size="30">
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <label for="email">Eamil</label>
+            </th>
+            <td>
+                <input type="text" name="email" id="email" size="25">
+            </td>
+        </tr>
+        <tr>
+            <th rowspan="3">
+                Sở thích
+            </th>
+               <td>
+                <input type="checkbox" name="hobby" > thể thao
+                <input type="checkbox" name="hobby"  > âm nhạc
+                <input type="checkbox" name="hobby" > đọc sách
+               </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" name="hobby" > lướt web
+                <input type="checkbox" name="hobby" > chơi gam
+                <input type="checkbox" name="hobby" > điện ảnh
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" name="hobby" > du lịch
+            </td>
+        </tr>
+<tr>
+    <td></td>
+    <td>
+    <input type="submit" name="summit" value="Gửi thông tin">
+    <input type="reset" name="reset" value="nhập lại">
+    </td>
+</tr>
+    </table>
+
+</from>
+</body>
+</html>
