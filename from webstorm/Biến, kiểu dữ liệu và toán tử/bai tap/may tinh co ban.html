@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Caculator</title>
+</head>
+<body>
+<h3>Caculator</h3>
+<div class="form">
+<form>
+    <input type="text" id="munber1" size=20 name ="munber">
+    <input type="text" id="munber2" size=20 name ="munber"><br><br>
+    <input type="button"  value="Addition(+)"onclick="plus()">
+    <input type="button"  value="Subtraction(-)" onclick="minus()">
+    <input type="button"  value="Multiplication(X)" onclick="multy()">
+    <input type="button"  value="Divison(/)" onclick="divide()">
+</form>
+<p id ="result" style="color: blue"></p>
+</div>
+<script>
+    function plus(){
+        let a = document.getElementById("munber1").value;
+        let b = document.getElementById("munber2").value;
+        let  result =parseInt(a) + parseInt(b);
+
+        document.getElementById("result").innerText="Result:"+result ;
+
+    }
+    function minus(){
+        let a = document.getElementById("munber1").value;
+        let b = document.getElementById("munber2").value;
+        let  result =parseInt(a) - parseInt(b);
+        document.getElementById("result").innerText="Result:"+result;
+    }
+    function multy(){
+        let a = document.getElementById("munber1").value;
+        let b = document.getElementById("munber2").value;
+        let  result =parseInt(a) * parseInt(b);
+        document.getElementById("result").innerText="Result:"+result;
+    }
+    function divide(){
+        let a = document.getElementById("munber1").value;
+        let b = document.getElementById("munber2").value;
+        let  result =parseInt(a) / parseInt(b);
+        document.getElementById("result").innerText="Result:"+result;
+    }
+</script>
+</body>
+</html>
