@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuyen doi tien te</title>
+</head>
+<body>
+<div class="form">
+<form>
+    <table>
+        <tr>
+            <th> Amount</th>
+            <td style="width: 40px"></td>
+            <th>From Currency</th>
+            <td style="width: 40px"></td>
+            <th> To Currency</th>
+        </tr>
+        <tr>
+            <td><input type="text" name="amount" id="number"></td>
+            <td style="width: 40px"></td>
+            <td>
+                <select name="to" id="option1">
+                    <option value="vietnam">vietnam</option>
+                    <option value="usd">usd</option>
+                </select>
+            </td>
+            <td style="width: 40px"></td>
+            <td>
+                <select name="from" id="option2">
+                    <option value="usd">usd</option>
+                    <option value="vietnam">vietnam</option>
+
+                </select>
+            </td>
+            <td> <input type="button" value="convert" style="background-color: blueviolet;color: white" onclick="change()"></td>
+
+        </tr>
+    </table>
+</form>
+    <p id="result" style="color: blue"></p>
+</div>
+<script>
+    function change() {
+        let Money= document.getElementById("number").value;
+        let option1= document.getElementById("option1").value;
+        let option2= document.getElementById("option2").value;
+        let result;
+        if (option1==option2) {
+            result=Money
+        }
+        else if (option1=="vietnam" && option2=="usd"){
+            result=Money*0.000042399932 +" $"
+        }
+        else  {
+            result=Money*23584 + " VND"
+        }
+        document.getElementById("result").innerText="Result:"+result
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nhập điểm</title>
+</head>
+<body>
+<div id="messageDiv"></div>
+<button type="button" onclick="showMessage();">start!</button>
+<script>
+    function showMessage() {
+        document.getElementById('messageDiv').innerHTML =
+        inputvatly = prompt("nhap diem vat ly");
+        inputhoa = prompt("nhap diem hoa");
+        inputsinhhoc = prompt(" nhap diem sinh hoc");
+        var vatly = parseInt(inputvatly);
+        var hoa = parseInt(inputhoa);
+        var sinhhoc = parseInt(inputsinhhoc);
+        var tb = ((vatly + hoa + sinhhoc) / 3);
+        var Tong = (vatly + hoa + sinhhoc);
+        document.write("diem trung binh la " + tb);
+        document.write("<br/>");
+        document.write("diem tong la " + Tong)
+    }
+</script>
+</body>
+</html>
