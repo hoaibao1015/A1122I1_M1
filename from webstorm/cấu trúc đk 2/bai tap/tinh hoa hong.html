@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hoahongtheodoanhthu</title>
+</head>
+<body>
+<input type="button" name="so" value="nhap so doanh thu cua ban" onclick="nhapSo()">
+<p id="result" style="color: blue"></p>
+<script>
+    function nhapSo(){
+    let dt =+prompt("nhap doanh thu:")
+    let result ;
+        if(dt>50000000){
+            result="tien hoa hong cua ban la 10 % nhe va day la so tien ban co "+0.1*dt
+        }
+    else if(dt>250000000){
+            result="tien hoa hong cua ban la 5 % nhe va day la so tien ban co "+0.05*dt
+    }
+    else {
+            result="tien hoa hong cua ban la 2.5 % nhe va day la so tien ban co "+0.25*dt
+    }
+        document.getElementById("result").innerText=result ;
+    }
+</script>
+
+</body>
+</html>
