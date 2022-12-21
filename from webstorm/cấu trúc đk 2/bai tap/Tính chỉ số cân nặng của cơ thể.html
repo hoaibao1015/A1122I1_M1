@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính chỉ số cân nặng của cơ thể</title>
+</head>
+<body>
+
+<forn>
+    <input type="text" name="w" id="weight" >
+    <input type="text" name="h" id="height" >
+    <br><br>
+    <input type="button" name="tinh" value="ket qua" onclick="tinkKq()">
+</forn>
+<p id="result" style="color: blue"></p>
+
+<script>
+    function tinkKq() {
+    let weigh=  document.getElementById("weight").value;
+    let height= document.getElementById("height").value;
+    let bmi =weigh/(height*height);
+    let result;
+        if (bmi < 18){
+            result="Underweight";}
+        else if  (bmi < 25.0){
+            result="Normal"}
+        else if  (bmi < 30.0){
+            result="Overweight";}
+        else{
+            result="Obese";
+        }
+        document.getElementById("result").innerText="Result:"+result
+
+    }
+
+</script>
+</body>
+</html>

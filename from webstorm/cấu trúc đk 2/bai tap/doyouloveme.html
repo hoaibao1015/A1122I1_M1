@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>do you love me</title>
+</head>
+<body>
+ <h1 style="position:absolute; left:620px; top:215px;">do you love me</h1>   
+<input type="button" value="yes" name="yes" onclick="yescLick()" style="position: absolute;left:660px; top:285px; ">
+<input type="button" value="no" name="no" id="nono" onmouseover="nocLick()" style="position: absolute;left:720px; top:285px; ">
+</body>
+<script>
+    function yescLick() {
+        alert("OH MY GOD ! really i am very happy thank you i love you too");
+    }
+    function nocLick(){
+       let a = Math.round(Math.random() * window.innerWidth);
+        let b = Math.round(Math.random() * window.innerHeight);
+        document.getElementById("nono").style.left= a +"px";
+        document.getElementById("nono").style.top= b +"px";//
+    }
+    
+
+</script>
+</html>

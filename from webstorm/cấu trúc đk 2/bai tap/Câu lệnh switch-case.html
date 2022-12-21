@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu lệnh switch-case</title>
+</head>
+<body>
+<div class="form">
+<form >
+    <input type="text" id="thang" >
+    <input type="button" value="tính số ngày" onclick="tinhngay()">
+</form>
+<p id="result" style="color: blue"></p>
+</div>
+<script>
+    function tinhngay() {
+      let month=+(document.getElementById("thang").value) ;
+      let result;
+      switch (month) {
+          case 1:
+          case 3:
+          case 5:
+          case 7:
+          case 8:
+          case 10:
+          case 12:
+              result="co 31 ngay ";
+              break ;
+          case 4:
+          case 6:
+          case 9:
+          case 11:
+              result="co 30 ngay";
+              break;
+          case 2:
+              result="co 28 hoặc 29 ngay";
+              break;
+       default :
+              result="khong co thang  nay trong năm";
+      }
+      document.getElementById("result").innerText="Result:"+result ;
+    }
+</script>
+</body>
+</html>
