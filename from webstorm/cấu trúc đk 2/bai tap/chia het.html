@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chia het</title>
+</head>
+<body>
+<input type="button" name="a" value="nhap a và b" onclick="nhapAB()">
+<p id="result" style="color: blue"></p>
+<script>
+    function nhapAB() {
+        let a = +prompt("nhap vao phan tu a") ;
+        let b = +prompt("nhap vao phan tu b");
+        let c = a % b ;
+        let result;
+        if (c==0) {
+            result ="a chi het cho b"
+        } else {
+            result ="a ko chi het cho b"
+
+        }
+        document.getElementById("result").innerText=result ;
+    }
+</script>
+</body>
+</html>

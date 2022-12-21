@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tuoi</title>
+</head>
+<body>
+<input type="button" name="tuoi" value="nhap tuoi" onclick="nhapTuoi()">
+<p id="result" style="color: blue"></p>
+<script>
+    function nhapTuoi() {
+        let a = +prompt("nhap vao so tuoi cua ban") ;
+        let result;
+        if (a >= 15) {
+            result="đủ tuổi để vào lớp 10"
+        } else {
+            result="chưa đủ tuổi để vào lớp 10"
+        }
+        document.getElementById("result").innerText=result ;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tim so lon nhat</title>
+</head>
+<body>
+<input type="button" name="a" value="nhap 3 so bat ky" onclick="nhapAB()">
+<p id="result" style="color: blue"></p>
+<script>
+    function nhapAB() {
+        let a = +prompt("nhap vao phan tu 1") ;
+        let b = +prompt("nhap vao phan tu 2");
+        let c = +prompt("nhap vao phan tu 3");
+        let max = a;
+        let result="a";
+        if (max < b){
+            max=b;
+            result ="b"
+        } else if (max < c) {
+            max=c;
+            result ="c"
+
+        }
+        document.getElementById("result").innerText="so lon nhat trong 3 so là "+result+"="+max ;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lớn hay bé hơn 0</title>
+</head>
+<body>
+<input type="button" name="so" value="nhap so ban muon" onclick="nhapSo()">
+<p id="result" style="color: blue"></p>
+<script>
+    function nhapSo() {
+        let a = +prompt("nhap vao so ") ;
+        let result;
+        if (a > 0) {
+            result=a +" là 1 số lớn hơn 0" ;
+        } else if (a<0) {
+            result=a +" là 1 số bé hơn 0";
+               } else {
+            result=a +" là 0";
+        }
+        document.getElementById("result").innerText=result ;
+    }
+</script>
+
+</body>
+</html>
