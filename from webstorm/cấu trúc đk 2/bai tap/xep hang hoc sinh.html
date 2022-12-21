@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xep hang hoc sinh</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>diem kiem tra</th>
+        <th>diem giua ky</th>
+        <th>diem cuoi ky</th>
+    </tr>
+    <tr>
+        <td><input type="text" name="diem kiem tra" id="kt"></td>
+        <td><input type="text" name="diem giua ky" id="gk"></td>
+        <td><input type="text" name="diem cuoi ky" id="ck"></td>
+    </tr>
+
+    <tr>
+        <td><input type="button" name="a" value="nhap 3 so bat ky" onclick="tinh()"></td>
+    </tr>
+</table>
+<p id="result" style="color: blue"></p>
+<script>
+    function tinh() {
+        let a = +(document.getElementById("kt").value);
+        let b = +(document.getElementById("gk").value);
+        let c = +(document.getElementById("ck").value);
+        let tb = ((a + (b * 2) + (c * 3)) / 6);
+        let result;
+        if ((a > 100) || (b > 100) || (c > 100) || (a < 0) || (b < 0) || (c < 0)) {
+            result = "nhap sai roi kia nhap lai di"
+        } else {
+            if (tb >= 85) {
+                result = "hoc sinh loai A"
+            } else if (tb >= 65) {
+                result = "hoc sinh loai B"
+            } else if (tb >= 45) {
+                result = "hoc sinh loai C "
+            } else if (tb >= 35) {
+                result = "hoc sinh loại D"
+            } else {
+                result = "hoc sinh loai E"
+            }
+        }
+        document.getElementById("result").innerText = "diem trung binh là " + tb + " nen " + result;
+    }
+</script>
+</body>
+</html>
