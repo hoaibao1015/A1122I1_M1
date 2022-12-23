@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> lãi ngân hàng </title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>so tien ban dau</th>
+        <th>so tien lai tren nam la</th>
+        <th>so thang ban gui la</th>
+    </tr>
+    <tr>
+        <td><input type="text"id="1" placeholder="tien ban dau"></td>
+        <td><input type="text"id="2" placeholder="tien lai nam"></td>
+        <td><input type="text"id="3" placeholder="so thang gui"></td>
+
+    </tr>
+    <tr>
+        <td><input type="button" name="money" value="summit " onclick="nhapTuoi()"></td>
+    </tr>
+</table>
+<p id="result" style="color: blue"></p>
+<script>
+    function nhapTuoi() {
+        let a = +(document.getElementById("1").value);
+        let b = +(document.getElementById("2").value);
+        let c = +(document.getElementById("3").value);
+        let result;
+        if ((a < 0)||(b<0)||(c<0)){
+            result="nhap sai roi ban toi oi gui tien thi phai co lai chu "
+        } else {
+            result="so tien lai cua ban la "+a*(b/100)*(c/12)+" vnd"
+        }
+        document.getElementById("result").innerText = result;
+            }
+</script>
+</body>
+</html>

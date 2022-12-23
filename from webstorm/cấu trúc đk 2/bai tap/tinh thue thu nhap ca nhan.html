@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>thue</title>
+</head>
+<body>
+<input type="button" name="money" value="nhap so thu nhap chiu thue cua ban " onclick="nhapTuoi()">
+<p id="result" style="color: blue"></p>
+<script>
+    function nhapTuoi() {
+        let a = +prompt("so thu nhap chiu thue cua ban là ");
+        let result;
+        if (a < 0) {
+            result = "nhap sai roi kia nhưng neu dung thi khong can nop thue dau nha";
+        } else {
+            if (a < 5000000) {
+                result = (a * 0.05);
+            } else if (a < 10000000) {
+                result = ((a * 0.10) - 250000);
+            } else if (a < 18000000) {
+                result = ((a * 0.15) - 750000);
+            } else if (a < 32000000) {
+                result = ((a * 0.25) - 1650000);
+            } else if (a < 52000000) {
+                result = ((a * 0.25) - 3250000);
+            } else if (a < 80000000) {
+                result = ((a * 0.30) - 5850000);
+            } else {
+                result = ((a * 0.35) - 9850000);
+            }
+        }
+        document.getElementById("result").innerText ="thu nhap chiu thue cua ban la "+a +" thue thu nhap ca nhan cua ban la "+result+" VND";
+    }
+</script>
+
+</body>
+</html>
