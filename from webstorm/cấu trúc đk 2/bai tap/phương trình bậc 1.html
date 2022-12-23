@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>phương trình bậc 1</title>
+</head>
+<body>
+<input type="button" name="number" value="nhap 2 so" onclick="nhapAB()">
+<p id="result" style="color: blue"></p>
+<script>
+    function nhapAB() {
+        let a = +prompt("nhap vao a");
+        let b = +prompt("nhap vao b");
+        let result = (-b) / a
+        if (a <= 0) {
+            result="Phương trình vô nghiệm, hãy nhập hệ số a khác 0";
+            document.getElementById("result").innerText = result;
+        } else {
+            document.getElementById("result").innerText = result;
+        }
+    }
+</script>
+</body>
+</html>

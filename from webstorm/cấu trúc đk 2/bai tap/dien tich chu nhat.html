@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dien tich chu nhat</title>
+</head>
+<body>
+<input type="button" name="number" value="nhap 2 canh hinh chu nhat" onclick="nhapAB()">
+<p id="result" style="color: blue"></p>
+<script>
+    function nhapAB() {
+        let a = +prompt("nhap vao chieu dai a");
+        let b = +prompt("nhap vao chieu rong b");
+        let result = a * b;
+        if ((a <= 0) || (b <= 0)) {
+            alert("canh phai hinh chu nhat phai lon hon 0")
+        } else {
+            document.getElementById("result").innerText = result;
+        }
+    }
+</script>
+</body>
+</html>

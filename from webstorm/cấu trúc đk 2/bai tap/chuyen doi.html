@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuyen doi</title>
+</head>
+<body>
+<input type="button" name="so" value=" doi tu do M sang do F" onclick="nhapSoM()">
+<input type="button" name="so" value=" doi tu do f sang do m" onclick="nhapSoF()">
+<p id="result" style="color: blue"></p>
+<script>
+    function nhapSoM() {
+        let a = +prompt("nhap so ban muon doi tu do C sang do F") ;
+        let result=(a*3.2808);
+        document.getElementById("result").innerText=result ;
+    }
+    function nhapSoF() {
+        let b = +prompt("nhap so ban muon doi tu do f sang do c") ;
+        let result=(b/3.2808);
+        document.getElementById("result").innerText=result ;
+    }
+</script>
+</body>
+</html>

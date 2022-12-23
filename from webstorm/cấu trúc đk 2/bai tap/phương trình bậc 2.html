@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> phương trình bậc 2</title>
+</head>
+<body>
+<input type="button" name="number" value="nhap 3 so" onclick="nhapSo()">
+<p id="result" style="color: blue"></p>
+<p id="x1" style="color: blue"></p>
+<p id="x2" style="color: blue"></p>
+<script>
+    function nhapSo() {
+        let a = +prompt("nhap vao a");
+        let b = +prompt("nhap vao b");
+        let c = +prompt("nhap vao c");
+        let delta = b*b -4*a*c;
+        let result;
+        let x1;
+        let x2;
+        if (delta<0){
+            result=("Phương trình vô nghiệm");
+            document.getElementById("result").innerText = result;
+        }else if (delta == 0){
+            result=("Nghiệm của phương trình là: "+ ((-b)/2*a))
+            document.getElementById("result").innerText = result;
+        } else {
+            x1=((-b + Math.sqrt(delta))/2*a)
+            x2=((-b - Math.sqrt(delta))/2*a)
+            document.getElementById("x1").innerText = "x1 = "+x1;
+            document.getElementById("x2").innerText = "x2 = "+x2;
+
+        }
+    }
+</script>
+</body>
+</html>

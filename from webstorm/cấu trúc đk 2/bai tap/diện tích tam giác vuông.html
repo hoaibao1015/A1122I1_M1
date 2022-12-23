@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>diện tích tam giác vuông</title>
+</head>
+<body>
+<input type="button" name="number" value="nhap 2 canh hinh tam giac vuong" onclick="nhapAB()">
+<p id="result" style="color: blue"></p>
+<script>
+    function nhapAB() {
+        let a = +prompt("nhap vao canh a");
+        let b = +prompt("nhap vao canh b");
+        let result = (a * b)/2;
+        if ((a <= 0) || (b <= 0)) {
+            alert("nhap sai roi kia ")
+        } else {
+            document.getElementById("result").innerText = result;
+        }
+    }
+</script>
+</body>
+</html>

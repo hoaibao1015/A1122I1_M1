@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>C sang độ F.</title>
+</head>
+<body>
+<input type="button" name="so" value="nhap so ban muon doi tu do C sang do F" onclick="nhapSoC()">
+<input type="button" name="so" value="nhap so ban muon doi tu do f sang do c" onclick="nhapSoF()">
+<p id="result" style="color: blue"></p>
+<script>
+    function nhapSoC() {
+        let a = +prompt("nhap so ban muon doi tu do C sang do F") ;
+        let result=((a*(9/5)) + 32);
+        document.getElementById("result").innerText=result ;
+    }
+
+    function nhapSoF() {
+        let b = +prompt("nhap so ban muon doi tu do f sang do c") ;
+        let result=((b-32)/(9/5));
+        document.getElementById("result").innerText=result ;
+    }
+</script>
+</body>
+</html>
