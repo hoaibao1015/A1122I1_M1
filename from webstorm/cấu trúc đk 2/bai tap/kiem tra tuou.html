@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra tuổi</title>
+</head>
+<body>
+<input type="button" name="tuoi" value="nhap tuoi" onclick="nhapTuoi()">
+<p id="result" style="color: blue"></p>
+<script>
+    function nhapTuoi() {
+        let a = +prompt("nhap vao so tuoi cua ban") ;
+        let result;
+        if (a>0&&a<=120) {
+            result="la tuoi con nguoi nha"
+        } else {
+            result="cho hoi ban dao la yeu quai phuong nao"
+        }
+        document.getElementById("result").innerText=result ;
+    }
+</script>
+</body>
+</html>

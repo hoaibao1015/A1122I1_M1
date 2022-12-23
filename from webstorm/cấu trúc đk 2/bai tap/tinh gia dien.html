@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tinh gia dien</title>
+</head>
+<body>
+<input type="button" name="number" value="nhap so dien tieu thu" onclick="nhapSo()">
+<p id="result" style="color: blue"></p>
+<script>
+    function nhapSo() {
+        let a = +prompt("nhap vao so dien tieu thu");
+        let result ;
+        if (a<0){
+            result="Hãy nhập mức tiêu thụ là số dương";
+        }else if (a<=50){
+            result="Mức tiêu thụ của bạn ở bậc 1 với giá tiền là: "+(a*1678);
+        }else if (a<=100){
+            result= "Mức tiêu thụ của bạn ở bậc 2 với giá tiền là: "+(a*1734);
+        }else if (a<=200){
+            result="Mức tiêu thụ của bạn ở bậc 3 với giá tiền là: "+(a*2014);
+        }else if (a<=300){
+            result="Mức tiêu thụ của bạn ở bậc 4 với giá tiền là: "+(a*2536 );
+        }else if (a<=400){
+            result="Mức tiêu thụ của bạn ở bậc 5 với giá tiền là: "+(a*2834);
+        }else if (a>400){
+            result="Mức tiêu thụ của bạn ở bậc 6 với giá tiền là: "+(a*2927);
+        }
+            document.getElementById("result").innerText = result+"vnd";
+    }
+</script>
+</body>
+</html>

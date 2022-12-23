@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kt canh tam giac</title>
+</head>
+<body>
+<input type="button" name="canh" value="nhap vao 3 so" onclick="nhapSo()">
+<p id="result" style="color: blue"></p>
+<script>
+    function nhapSo() {
+        let a = +prompt("nhap vao so a");
+        let b = +prompt("nhap vao so b");
+        let c = +prompt("nhap vao so c");
+        let result;
+        if ((a > 0)&&(b>0)&&(c>0)&& (a + b > c)&&(b + c > a)&&(a + c > b)) {
+            result="la canh cua 1 hinh tam giac";
+        } else {
+            result="ko phai la canh cua 1 hinh tam giac";
+        }
+        document.getElementById("result").innerText = result;
+    }
+</script>
+</body>
+</html>
