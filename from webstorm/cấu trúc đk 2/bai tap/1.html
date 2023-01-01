@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Xuất ra màn hình 5 từ Hello
+    for(let i = 1; i <= 5; i++){ // i++ => i = i + 1
+        document.write("Hello<br/>"); // 5 <= 5 => true
+    }
+    // Giá trị khởi tạo (let i = 0;) chạy đầu tiên và chạy 1 lần duy nhất
+    // Bước 1: i = 0, 0 < 5 => true => Thực hiện    body
+    // Bước 2: i = 1, 1 < 5 => true => Thực hiện body
+    // Bước 3: i = 2, 2 < 5 => true => Thực hiện body
+    // Bước 4: i = 3, 3 < 5 => true => Thực hiện body
+    // Bước 5: i = 4, 4 < 5 => true => Thực hiện body
+    // Bước 6: i = 5, 5 < 5 => false => Thoát khỏi vòng lặp
+
+
+    //Xuất ra giá trị từ 1 cho đến n; với n nhập từ bàn phím
+    let n = +prompt("Nhập giá trị n: ");
+
+    for (let i = 1; i <= n; i++) { //' n = 3
+        document.writeln(i)
+    }
+    // Bước 1: i = 1 ; 1 <= 3 => true  => Thực hiện body (1)
+    // Bước 2: i = 2 ; 2 <= 3 => true  => Thực hiện body (2)
+    // Bước 3: i = 3 ; 3 <= 3 => true  => Thực hiện body (3)
+    // Bước 4: i = 4 ; 4 <= 3 => false  => Thoát khỏi vòng lặp
+
+    for (let i = 0; i < n; i++) { //' n = 3
+        document.writeln(i + 1)
+    }
+
+    // Bước 1: i = 0 ; 0 = 3 => true  => Thực hiện body (0 + 1 = 1)
+    // Bước 2: i = 1 ; 1 < 3 => true  => Thực hiện body (1 + 1 = 2)
+    // ... Tương tự
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bang cuu chuong</title>
+</head>
+<body>
+<!--JS-->
+<script>
+       let munber;
+       munber= "<table border ='1'  cellspacing ='0' cellpadding ='5'>";
+        for(i = 1 ; i < 10 ; i++){
+            munber = munber +"<tr>";
+            for(j = 2; j < 10 ; j++){
+                munber = munber + "<td>" +j+"*"+i+"="+ i * j + "</td>";
+
+            }munber = munber + "</tr>";
+        }
+       munber = munber + "</table>";
+        document.write(munber);
+</script>
+</body>
+</html>

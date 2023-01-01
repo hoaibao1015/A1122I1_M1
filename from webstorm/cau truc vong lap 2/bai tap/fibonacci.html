@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fibonacci</title>
+</head>
+<body>
+<script>
+    let number1=1;
+    let number2=1;
+    let number3;
+    document.writeln(number1);
+    document.writeln(number2);
+    for (i=3;i<=20;i++){
+        number3=number1+number2;
+        document.writeln(number3);
+        number1=number2;
+        number2=number3;
+    }
+</script>
+</body>
+</html>
