@@ -2,9 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>triangle-3</title>
 </head>
 <body>
+
+<script>
+    let n= prompt("nhap canh tu ban phim")
+    for (i = n; i > 0; i--) {
+
+        for (j = i; j <= n; j++) {
+            document.write("* ")
+        }
+        document.write("<br/>")
+    }
+    document.write("<br>")
+    for (i = 1; i <= n; i++) {
+
+        for (j = i; j <= n; j++) {
+            document.write("* ")
+        }
+        document.write("<br/>")
+    }
+    document.write("<br>")
+    for (i = n; i > 0; i--) {
+        for (j = 1; j <= i; j++) {
+            document.write("&nbsp&nbsp&nbsp")
+        }
+        for (j = i; j <= n; j++) {
+            document.write("* ")
+        }
+        document.write("<br/>")
+    }
+    document.write("<br>")
+    for (i = 1; i <= n; i++) {
+        for (j = 1; j <= i; j++) {
+            document.write("&nbsp&nbsp&nbsp")
+        }
+        for (j = i; j <= n; j++) {
+            document.write("* ")
+        } document.write("<br/>")
+    }
+
+</script>
 
 </body>
 </html>

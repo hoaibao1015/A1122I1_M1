@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hinh chu nhat</title>
+</head>
+<body>
+<script>
+    let height=prompt("nhap chieu dai");
+    let width=prompt("nhap chieu rong");
+
+    for ( i = 1; i <= height; i++){
+        for ( j = 1; j <= width; j++){
+            if (i == 1 || j == 1 || i == height || j == width){
+                document.write("* ")
+            }else{
+                document.write("&nbsp&nbsp&nbsp")
+            }
+        }
+        document.write("<br/>")
+    }
+
+
+
+</script>
+</body>
+</html>
