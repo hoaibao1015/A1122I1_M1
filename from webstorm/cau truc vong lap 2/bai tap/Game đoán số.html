@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game đoán số</title>
+</head>
+<body>
+<input type="button" name="play" value="play" onclick="playGame()">
+<script>
+   function playGame(){
+    let munberLucky=+prompt("nhap vao khoang ban muon doan nao");
+       let ranDom =Math.round(munberLucky*Math.random()) ;
+        let numberOfyou=+prompt("nhap so ban doan")
+       if ( numberOfyou == ranDom) {
+           alert("you win");
+       } else {
+           alert("you lost "+"so dung la "+ranDom);
+       }
+   }
+</script>
+</body>
+</html>
