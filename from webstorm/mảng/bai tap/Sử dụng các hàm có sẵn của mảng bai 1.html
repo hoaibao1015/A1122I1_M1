@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sử dụng các hàm có sẵn của mảng</title>
+</head>
+<body>
+<script>
+    let plus=["Red", "Green", "White", "Black"];
+    document.write(plus.toString()+"<br>");
+    document.write(plus.join()+"<br>");
+    document.write(plus.join('+')+"<br>");
+    let s=" ";
+    for (i=0;i<plus.length;i++){
+        s=s+plus[i]+",";
+    }
+    document.write('"'+s+'"')
+</script>
+</body>
+</html>

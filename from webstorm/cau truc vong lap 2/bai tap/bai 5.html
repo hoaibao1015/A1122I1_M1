@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lãi ngân hàng</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>
+            <label for="money">Nhập số tiền</label>
+        </td>
+        <td>
+            <input type="text" id="money">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="month">Nhập số tháng  vay</label>
+        </td>
+        <td>
+            <input type="text" id="month">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="interest">Nhập số lãi mỗi tháng</label>
+        </td>
+        <td>
+            <input type="text" id="interest">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button onclick="result()">Submit</button>
+        </td>
+
+    </tr>
+</table>
+</body>
+
+<script>
+
+    function result() {
+        let money =+ parseInt(document.getElementById("money").value)
+        let month = +parseInt(document.getElementById("month").value)
+        let interest = +parseInt(document.getElementById("interest").value)
+        let interestRate = money*(1+(interest/100)*month);
+        alert("Số tiền bạn phải trả ngân hàng là: "+interestRate + "VND")
+    }
+
+</script>
+</html>

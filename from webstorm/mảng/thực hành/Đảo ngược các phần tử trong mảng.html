@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đảo ngược các phần tử trong mảng</title>
+</head>
+<body>
+
+<script>
+
+        let x=[7,8,9,4,6,2,8,4,57,7]
+        let last = x.length;
+        let frist = 0;
+        while (frist <= last) {
+            b = x[frist];
+            x[frist] = x[last];
+            x[last] = b;
+            frist++;
+            last--;
+        }
+        for (i = 1; i < x.length; i++) {
+            document.writeln(x[i])
+        }
+
+</script>
+
+</body>
+</html>
