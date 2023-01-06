@@ -45,7 +45,11 @@
         let money =+ parseInt(document.getElementById("money").value)
         let month = +parseInt(document.getElementById("month").value)
         let interest = +parseInt(document.getElementById("interest").value)
-        let interestRate = money*(1+(interest/100)*month);
+        let interestRate=0;
+        for (i=1;i<=month;i++){
+            interestRate=money*(1+interest/100);
+            money=interestRate;
+        }
         alert("Số tiền bạn phải trả ngân hàng là: "+interestRate + "VND")
     }
 
