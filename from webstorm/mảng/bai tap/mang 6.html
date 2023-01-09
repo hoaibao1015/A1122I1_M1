@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mang 6</title>
+</head>
+<body>
+<script>
+    let n = 10;
+    let i;
+    let array = [];
+    let count=0;
+    for (let i = 1; i <= n; i++) {
+        array[i - 1] = +prompt("phan tu thu " + i);
+    }
+    let V=+prompt("nhap phan tu V");
+    for (i=0;i<=array.length;i++){
+        if (V==array[i]){
+            count++
+        }
+    }
+    if (count>0){
+        document.writeln("V is in the array");
+    }else {
+        document.writeln("V is not in the array");
+    }
+</script>
+</body>
+</html>

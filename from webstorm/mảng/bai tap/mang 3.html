@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mang3</title>
+</head>
+<body>
+<script>
+    let n = +prompt("nhap so phan tu cua mang");
+    let max = 0;
+    let array = [];
+    let total = 0;
+    let average=0;
+    let i;
+    for (i = 1; i <= n; i++) {
+        array[i - 1] = +prompt("nhap vao phan tu thu " + i);
+
+    }
+    for (i = 0; i <= array.length; i++) {
+        if (array[i] > max) {
+            max = array[i];
+            total=total+array[i]
+            average=total/n;
+        }
+
+    }
+
+
+    document.writeln("so lon nhat cua mang la " + max + " trung binh cua mang la " + average)
+</script>
+</body>
+</html>

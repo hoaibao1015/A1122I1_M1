@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mang 7</title>
+</head>
+<body>
+<script>
+    let n = 10;
+    let i;
+    let array = [];
+    let count=0;
+    for (let i = 1; i <= n; i++) {
+        array[i - 1] = +prompt("phan tu thu " + i);
+    }
+    let V=+prompt("nhap phan tu V");
+    for (let j =0; j<array.length; j++) {
+        if(array.indexOf(V) !== -1){
+            array.splice(array.indexOf(V), 1);
+            document.write("mang da xoa " + array);
+        }else {
+            document.write("input V again");
+        }
+        break;
+    }
+</script>
+</body>
+</html>

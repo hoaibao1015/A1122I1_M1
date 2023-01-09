@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mang3</title>
+</head>
+<body>
+<script>
+    let n = 10;
+    let max = 0;
+    let count = 0;
+    let array = [];
+    let i;
+    for ( i = 1; i <= n; i++) {
+        array[i - 1] = +prompt("nhap vao phan tu thu "+i);
+    }
+    for (i=0;i<=array.length;i++){
+        if (array[i]>max) {
+            max=array[i];
+            count=i;
+        }
+    }
+    document.writeln("so lon nhat cua mang la "+max+" vi tri cua no la "+count)
+</script>
+</body>
+</html>

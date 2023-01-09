@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mang 5</title>
+</head>
+<body>
+<script>
+    let n = +prompt("nhap vao so luong phan tu");
+    let i;
+    let array = [];
+    for (let i = 1; i <= n; i++) {
+        array[i - 1] = +prompt("phan tu thu " + i);
+    }
+    for (i=0;i<=array.length;i++){
+        if (array[i]<0){
+            document.writeln(array[i])
+        }
+    }
+</script>
+</body>
+</html>
