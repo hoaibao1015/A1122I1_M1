@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = 10;
+    let i;
+    let array = [];
+    for (let i = 1; i <= n; i++) {
+        array[i - 1] = +prompt("phan tu thu " + i);
+    }
+    document.writeln(array+"<br>");
+    let befor= array[0];
+    for (let i = 0; i<array.length -1; i++){
+        for (let j = i + 1; j <array.length;j++){
+            if(array[i] < array [j]){
+                befor = array[i];
+                array[i] = array[j]
+                array[j] = befor;
+            }
+        }
+    }
+    document.writeln(array);
+</script>
+</body>
+</html>
