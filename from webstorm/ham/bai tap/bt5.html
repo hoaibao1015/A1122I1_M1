@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bt 5</title>
+</head>
+<body>
+<script>
+    let sao = prompt("nhap ten ngoi sao ");
+    let sao1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let Sao2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+    function saoThuocChomSao(){
+        let index = sao1.indexOf(sao);
+        if(index == -1){
+            document.write('khong tim thay chom sao');
+        }else{
+            document.write(Sao2[index])
+        }
+    }
+    saoThuocChomSao();
+    </script>
+</body>
+</html>

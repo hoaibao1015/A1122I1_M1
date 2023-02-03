@@ -5,6 +5,24 @@
     <title>từ điển</title>
 </head>
 <body>
+<label for="dictionary"></label>
+<input placeholder="Key" type="text" id="dictionary" name="dictionary">
+<button type="button" onclick="search()">Search</button>
+<br><br>
+<a href="https://translate.google.com/?hl=vi">muốn bản đầy đủ </a>
+<script>
+
+    function search (){
+        let newWord = document.getElementById("dictionary").value;
+        let English = ["hello","hi","goodbye","thankyou"];
+        let Vietnam = ["xin chào","xin chào","tạm biệt","cảm ơn"];
+        if(English.indexOf(newWord) !== -1){
+            document.write(Vietnam[English.indexOf(newWord)]);
+        }else{
+            document.write(" Xin mời nhập lại")
+        }
+    }
+</script>
 
 </body>
 </html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="form"></div>
+<form action="" method="post">
+    <h3>Công cụ chuyển đổi nhị phân sang thập phân</h3>
+    <table>
+        <tr>
+            <td><label for="tudau">từ</label></td>
+            <td><label for="toisau">tới</label></td>
+        </tr>
+        <tr>
+            <td id="tudau">
+                <select name="truoc" id="tu">
+                    <option value="2">nhị phân</option>
+                    <option value="8">bát phân</option>
+                    <option value="10">thập phân</option>
+                    <option value="16">thập lục phân</option>
+
+                </select>
+            </td>
+            <td id="toisau">
+                <select name="sau" id="toi">
+                    <option value="2">nhị phân</option>
+                    <option value="8">bát phân</option>
+                    <option value="10">thập phân</option>
+                    <option value="16">thập lục phân</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <table style="background-color: #999696">
+        <tr>
+            <td>
+                <lable for="number">nhập số</lable>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="text" id="number"></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="đổi" style="background-color: blue" onclick="change()"><input type="reset"
+                                                                                                          value="cài lại">
+            </td>
+        </tr>
+        <tr>
+            <td><textarea name="result" id="result" cols="40" rows="5"></textarea></td>
+        </tr>
+    </table>
+</form>
+</body>
+<script>
+    function change() {
+        let n = document.getElementById("number").value;
+        let typeA = document.getElementById("tu").value;
+        let typeB = document.getElementById("toi").value;
+        let result;
+
+    }
+
+</script>
+</html>

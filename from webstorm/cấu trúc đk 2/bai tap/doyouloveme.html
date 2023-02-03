@@ -3,8 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <title>do you love me</title>
+    <style>
+        html{
+            background: url("https://scr.vn/wp-content/uploads/2020/07/Background-tim.jpg");
+            background-size: cover;
+        }
+        @keyframes bao {
+            from{
+                position: absolute;
+                top: -100px;
+                left: 0%;
+            }
+            to{
+                position: absolute;
+                top: 150px;
+                left: 50%;
+            }
+        }
+        .myDiv1{
+            animation-name: bao;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            width: 200px;
+            height: 100px;
+            background-color: red;
+        }
+    </style>
 </head>
 <body>
+<div class="myDiv1">
+    Hello!
+</div>
  <h1 style="position:absolute; left:620px; top:215px;">do you love me</h1>   
 <input type="button" value="yes" name="yes" onclick="yescLick()" style="position: absolute;left:660px; top:285px; ">
 <input type="button" value="no" name="no" id="nono" onmouseover="nocLick()" style="position: absolute;left:720px; top:285px; ">
