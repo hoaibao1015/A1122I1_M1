@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>feet và meters</title>
+</head>
+<body>
+<script>
+    let number=prompt("nhap so muon doi m sang f");
+    let number2=prompt("nhap so muon doi f sang m");
+
+    function footToMeter(foot) {
+        let meter=0.305*foot;
+        document.writeln(foot+" foot chuyen sang thanh "+meter+" meter"+"<br>");
+        return foot;
+    }
+    function meterToFoot(meter) {
+        let foot=3.279*meter;
+        document.writeln(meter +" meter chuyen sang thanh "+foot+" foot"+"<br>");
+        return meter;
+    }
+    footToMeter(number2);
+    meterToFoot(number);
+</script>
+</body>
+</html>

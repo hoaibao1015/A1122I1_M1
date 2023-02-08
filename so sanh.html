@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>so sanh</title>
+</head>
+<body>
+<script>
+   let num1 = +prompt("nhap so thu nhat");
+    let num2 = +prompt("nhap so thu hai ");
+    function number(n1,n2) {
+        if (n1 > n2){
+            document.write("Số thứ nhất lớn hơn số thứ hai: "+ n1 + ">" + n2);
+        }else if (n1 == n2){
+            let sum1 = n1 + n2;
+            document.write("so 1 bang so 2 . tong la: "+n1 +"+"+n2+"="+sum1);
+        }else{
+            let sum2 = n1 + n2;
+            document.write("so 1 be hon so 2. Tong la: "+n1 +"+"+n2+"="+sum2);
+        }
+    }
+    number(num1,num2);
+</script>
+
+</body>
+</html>

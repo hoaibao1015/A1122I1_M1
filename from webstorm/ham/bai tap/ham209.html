@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = +prompt("so phan tu");
+    let arr1 = [];
+    for (let i = 0; i < n; i++) {
+        arr1[i] = +prompt("nhap phan tu so " + (i + 1));
+    }
+    let kiTu = prompt("Nhập vào một ký tự bất kỳ");
+
+    function array(arr, b) {
+        let count = 0;
+        for (let j = 0; j < arr.length; j++) {
+            if (arr[j] == b) {
+                count++
+            }
+        }
+        if (count != 0) {
+            document.write("Co " + count + " ky tu " + b + " trong mang");
+
+        } else document.write("-1");
+    }
+
+    array(arr1, kiTu);
+</script>
+</body>
+</html>
