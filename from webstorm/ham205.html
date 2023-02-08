@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n1 = +prompt("nhap so dau tien");
+    let n2 = +prompt("nhap so thu 2");
+    let n3 = +prompt("nhap so thu 3");
+
+    function nhonhat(s1, s2, s3) {
+        let min = s1;
+        if (min > s2) {
+            min = s2
+        }
+        if (min > s3) {
+            min = s3
+        }
+        document.write("so nhat nhat trong 3 so la = " +min);
+    }
+    nhonhat(n1,n2,n3)
+</script>
+</body>
+</html>
