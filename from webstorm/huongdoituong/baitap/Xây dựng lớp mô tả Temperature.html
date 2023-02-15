@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Temperature {
+        constructor(celsius){
+            this.celsius = celsius;
+        }
+        setCelsius (celsius){
+            if(celsius >= -273){
+                this.celsius = celsius;
+            }
+        }
+        getCelsius (){
+            return  this.celsius;
+        }
+        display(){
+            document.write("Nhiệt độ là: " + this.celsius + " độ C" );
+        }
+        //Đổi sang độ F
+        getFahrenheit (){
+            return (this.celsius*1.8+32);
+        }
+        //Đổi sang độ Kenvin
+        getKelvin (){
+            return (this.celsius + 273.15);
+        }
+    }
+    let celsius = new Temperature(25);
+    let f = celsius.getFahrenheit();
+    let k = celsius.getKelvin();
+    document.write("C to F: " + f + "</br>");
+    document.write("C to K: " + k);
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3"></canvas>
+<script>
+
+    class Rectangle {
+        constructor(length, width) {
+            this.length = length;
+            this.width = width;
+        }
+
+        getArea() {
+            return ("Area = " + (this.length * this.width));
+        }
+
+        getCircuit() {
+            return ("Circuit = " + (this.length + this.width) * 2);
+        }
+
+        draw(ctx) {
+            ctx.beginPath();
+            ctx.rect(40, 10, this.length, this.width);
+            ctx.fillStyle = "blue"
+            ctx.fill();
+        }
+    }
+
+    let rectangle = new Rectangle(60, 80);
+    console.log(rectanglie.getArea());
+    console.log(rectangle.getCrcuit());
+    const canvas = document.getElementById("myCanvas");
+    const ctx = canvas.getContext("2d");
+    rectangle.draw(ctx)
+</script>
+</body>
+</html>

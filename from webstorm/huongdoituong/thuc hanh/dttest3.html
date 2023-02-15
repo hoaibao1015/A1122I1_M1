@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+function Apple (type) {
+    this.type = type;
+    this.color = "red";
+    this.getInfo = getAppleInfo;
+}
+//Khai báo hàm getAppleInfo()
+//Khuyến nghị: đây là cách không nên dùng, 
+//đọc tiếp sẽ rõ
+function getAppleInfo() {
+    return this.color + ' ' + this.type + ' apple';
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" name="money" value="nhập số lương của bạn " onclick="luong()">
+<p id="result" style="color: blue"></p>
+<script>
+    function luong() {
+        let a = +prompt("nhập số lương của bạn ");
+        let result;
+        if (a < 0) {
+            result = "nhập sai rồi nha";
+        } else {
+            if (a < 7000000) {
+                result = a-(a * 0.05);
+            } else if (a < 15000000) {
+                result = a-(a * 0.10);
+            } else  {
+                result = a-(a * 0.15);
+            }
+        }
+        document.getElementById("result").innerText ="lương của bạn là : "+a +" lương thực bạn nhận được thực tế  là "+result+" VND";
+    }
+</script>
+</body>
+</html>
